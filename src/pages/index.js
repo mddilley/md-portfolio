@@ -123,7 +123,7 @@ const IndexPage = () => (
             Vision Zero
           </a>
           . I'm lucky to work with a team that boldy explores new tech while
-          keeping the tried and true close at hand.
+          also keeping the tried and true close at hand.
         </p>
       </div>
     </section>
