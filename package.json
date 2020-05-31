@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
+    "devicon": "^2.2.0",
     "gatsby": "^2.19.23",
     "gatsby-plugin-manifest": "^2.2.42",
     "gatsby-plugin-react-helmet": "^3.1.22",

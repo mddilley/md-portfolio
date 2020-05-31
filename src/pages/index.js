@@ -89,9 +89,10 @@ const IndexPage = () => (
       <div className="content">
         <p>
           <strong>Let me tell you a bit about myself!</strong> My primary
-          language is Javascript, and I'm loving React Hooks on the front end to
-          keep code simple, readable, and consistent. On the side, I'm exploring
-          Python, Amazon Web Services, and containerization at the moment.
+          language is Javascript, and I'm loving React Hooks on the front end
+          for keeping code simple, readable, and consistent. On the side, I'm
+          exploring Python, Amazon Web Services, and containerization at the
+          moment.
         </p>
         <p>
           <strong>When it comes to getting things done</strong>, I self-teach,
@@ -105,9 +106,6 @@ const IndexPage = () => (
           leveling up my cooking skills, exploring the beautiful city of Austin,
           TX, and caring for my dog named Ben.
         </p>
-        {/* <span className="image main">
-          <img src={pic02} alt="" />
-        </span> */}
       </div>
     </section>
 
@@ -137,7 +135,7 @@ const IndexPage = () => (
       <div className="content">
         <p>
           <h2>
-            Oculus LIMS //{' '}
+            Oculus LIMS >{' '}
             <a
               href="https://github.com/mddilley/oculus-lims"
               className="icon brands fa-github"
@@ -177,7 +175,7 @@ const IndexPage = () => (
         <br />
         <p>
           <h2>
-            Wagger //{' '}
+            Wagger >{' '}
             <a
               href="https://github.com/mddilley/wagger"
               className="icon brands fa-github"
@@ -211,7 +209,7 @@ const IndexPage = () => (
         <br />
         <p>
           <h2>
-            MTG Deck Builder //{' '}
+            MTG Deck Builder >{' '}
             <a
               href="https://github.com/mddilley/mtg-deck-builder"
               className="icon brands fa-github"
@@ -245,7 +243,7 @@ const IndexPage = () => (
         <br />
         <p>
           <h2>
-            Fantasy Football //{' '}
+            Fantasy Football >{' '}
             <a
               href="https://github.com/mddilley/fantasy-football"
               className="icon brands fa-github"
@@ -276,6 +274,46 @@ const IndexPage = () => (
           />
         </div>
         <br />
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>Tech</h2>
+      </header>
+      <div className="content">
+        <ul className="content-icons">
+          <li>
+            <i class="devicon-react-original-wordmark"></i>
+          </li>
+          <li>
+            <i class="devicon-javascript-plain"></i>
+          </li>
+          <li>
+            <i class="devicon-html5-plain-wordmark"></i>
+          </li>
+          <li>
+            <i class="devicon-css3-plain-wordmark"></i>
+          </li>
+          <li>
+            <i class="devicon-bootstrap-plain-wordmark"></i>
+          </li>
+          <li>
+            <i class="devicon-github-plain-wordmark"></i>
+          </li>
+          <li>
+            <i class="devicon-git-plain-wordmark"></i>
+          </li>
+          <li>
+            <i class="devicon-python-plain-wordmark"></i>
+          </li>
+          <li>
+            <i class="devicon-jquery-plain-wordmark"></i>
+          </li>
+          <li>
+            <i class="devicon-ruby-plain-wordmark"></i>
+          </li>
+        </ul>
       </div>
     </section>
 

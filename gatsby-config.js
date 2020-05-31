@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter - Paradigm Shift',
-    author: 'Hunter Chang',
-    description: 'A Gatsby.js Starter based on Paradigm Shift by HTML5 UP',
+    title: 'Mike Dilley Portfolio',
+    author: 'Mike Dilley',
+    description: 'A portfolio site for Mike Dilley',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
