@@ -22,7 +22,6 @@ class Gallery extends Component {
     if (!images) return
 
     const gallery = images.map((obj, i) => {
-      console.log(obj)
       return (
         <a
           className={obj.landscape ? 'landscape' : ''}

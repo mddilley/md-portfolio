@@ -19,12 +19,64 @@ import thumb07 from '../assets/img/gallery/thumbs/07.jpg'
 import thumb08 from '../assets/img/gallery/thumbs/08.jpg'
 import thumb09 from '../assets/img/gallery/thumbs/09.jpg'
 import thumb10 from '../assets/img/gallery/thumbs/10.jpg'
-import pic01 from '../assets/img/pic01.jpg'
-import pic02 from '../assets/img/pic02.jpg'
+import headshot from '../assets/img/headshot2squared.jpg'
+import heroku from '../assets/img/heroku-logo-solid-black.svg'
+import oculusPic from '../assets/img/oculus.jpg'
+import waggerPic from '../assets/img/wagger.jpg'
+import mtgPic from '../assets/img/mtg.jpg'
+import ffPic from '../assets/img/fantasyfootball.jpg'
 import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 
-const images01 = [
+const oculus = [
+  {
+    id: 'oculus',
+    source: oculusPic,
+    thumbnail: oculusPic,
+    caption: 'Oculus LIMS',
+    description:
+      'A laboratory information management tool built with React and Redux and served by a Ruby on Rails API',
+    landscape: true,
+  },
+]
+
+const wagger = [
+  {
+    id: 'wagger',
+    source: waggerPic,
+    thumbnail: waggerPic,
+    caption: 'Wagger',
+    description:
+      'Rails and JavaScript application that allows users to register, add dogs, and plan dog playdates',
+    landscape: true,
+  },
+]
+
+const mtg = [
+  {
+    id: 'mtg',
+    source: mtgPic,
+    thumbnail: mtgPic,
+    caption: 'MTG Deck Builder',
+    description:
+      'RESTful Sinatra app that builds Magic: The Gathering decks utilizing Scryfall API for card data',
+    landscape: true,
+  },
+]
+
+const ff = [
+  {
+    id: 'ff',
+    source: ffPic,
+    thumbnail: ffPic,
+    caption: 'Fantasy Football gem',
+    description:
+      'Ruby CLI gem that scrapes fantasy football player ranking data from Fantasypros.com',
+    landscape: true,
+  },
+]
+
+const image01 = [
   {
     id: '1',
     source: full01,
@@ -111,11 +163,11 @@ const IndexPage = () => (
   <Layout>
     <section className="intro">
       <header>
-        <h1>Paradigm Shift</h1>
+        <h1>Mike Dilley</h1>
         <p>
-          A free responsive site template designed by{' '}
-          <a href="https://twitter.com/ajlkn">@ajlkn</a> /{' '}
-          <a href="https://html5up.net">HTML5 UP</a>
+          Howdy! I'm a web developer who's passionate about learning new tech
+          and pursuing incremental improvement - especially when it makes other
+          lives better.
         </p>
         <ul className="actions">
           <li>
@@ -127,162 +179,205 @@ const IndexPage = () => (
       </header>
       <div className="content">
         <span className="image fill" data-position="center">
-          <img src={pic01} alt="" />
+          <img src={headshot} alt="Headshot of Mike" />
         </span>
       </div>
     </section>
 
     <section id="first">
       <header>
-        <h2>Magna sed nullam nisl adipiscing</h2>
+        <h2>About Me</h2>
       </header>
       <div className="content">
         <p>
-          <strong>Lorem ipsum dolor</strong> sit amet consectetur adipiscing
-          elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad
-          litora torquent per conubia nostra, per inceptos himenaeos. Etiam
-          tristique libero eu nibh porttitor amet fermentum. Nullam venenatis
-          erat id vehicula ultrices sed ultricies condimentum. Magna sed etiam
-          consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et
-          dolor libero, feugiat magna tempus, sed et lorem adipiscing.
+          <strong>Let me tell you a bit about myself!</strong> My primary
+          language is Javascript, and I'm loving React Hooks on the front end to
+          keep code simple, readable, and consistent. On the side, I'm exploring
+          Python, Amazon Web Services, and containerization at the moment.
         </p>
-        <span className="image main">
+        <p>
+          <strong>When it comes to getting things done</strong>, I self-teach,
+          collaborate, and support a human-centered culture of encouragement and
+          sharing. I love seeing projects grow over time, and I strive for
+          scalable, self-documented, and extensible code.
+        </p>
+
+        <p>
+          <strong>Outside of work</strong>, I love learning about music,
+          leveling up my cooking skills, exploring the beautiful city of Austin,
+          TX, and caring for my dog named Ben.
+        </p>
+        {/* <span className="image main">
           <img src={pic02} alt="" />
-        </span>
+        </span> */}
       </div>
     </section>
 
     <section>
       <header>
-        <h2>Feugiat consequat tempus ultrices</h2>
+        <h2>Work</h2>
       </header>
       <div className="content">
         <p>
-          <strong>Etiam tristique libero</strong> eu nibh porttitor amet
-          fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies
-          condimentum.
-        </p>
-        <ul className="feature-icons">
-          <li className="icon solid fa-laptop">Consequat tempus</li>
-          <li className="icon solid fa-bolt">Etiam adipiscing</li>
-          <li className="icon solid fa-signal">Libero nullam</li>
-          <li className="icon solid fa-cog">Blandit condimentum</li>
-          <li className="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-          <li className="icon solid fa-code">Nibh amet venenatis</li>
-        </ul>
-        <p>
-          Vehicula ultrices sed ultricies condimentum. Magna sed etiam
-          consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et
-          dolor libero, feugiat magna tempus, sed et lorem adipiscing.
+          I currently serve the <strong>City of Austin</strong> as part of the
+          Transporation Department's Data & Technology Services team. I help
+          build projects to make work easier and smarter, and my role is largely
+          focused on helping Austin work towards{' '}
+          <a href="http://austintexas.gov/department/vision-zero">
+            Vision Zero
+          </a>
+          . I'm lucky to work with a team that boldy explores new tech while
+          keeping the tried and true close at hand.
         </p>
       </div>
     </section>
 
     <section>
       <header>
-        <h2>Ultrices erat magna sed condimentum</h2>
+        <h2>Projects</h2>
       </header>
       <div className="content">
         <p>
-          <strong>Integer mollis egestas</strong> nam maximus erat id euismod
-          egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
+          <h2>
+            Oculus LIMS //{' '}
+            <a
+              href="https://github.com/mddilley/oculus-lims"
+              className="icon brands fa-github"
+            >
+              <span className="label">GitHub</span>Code //{' '}
+            </a>
+            <a
+              href="https://github.com/mddilley/oculus-lims-api"
+              className="icon brands fa-github"
+            >
+              <span className="label">GitHub</span>API //{' '}
+            </a>
+            <a
+              href="https://oculus-lims.herokuapp.com/"
+              className="icon brands"
+            >
+              <span className="label">Demo</span>
+              <img className="image heroku" src={heroku} /> Demo
+            </a>
+          </h2>
+          A laboratory information management tool built with React and Redux
+          and served by a Ruby on Rails API{' '}
         </p>
-
-        <section>
-          <header>
-            <h3>Erat aliquam</h3>
-            <p>
-              Vehicula ultrices dolor amet ultricies et condimentum. Magna sed
-              etiam consequat, et lorem adipiscing sed dolor sit amet,
-              consectetur amet do eiusmod tempor incididunt ipsum suspendisse
-              ultrices gravida.
-            </p>
-          </header>
-          <div className="content">
-            <Gallery
-              images={images01.map(
-                ({
-                  id,
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                })
-              )}
-            />
-          </div>
-        </section>
-
-        <section>
-          <header>
-            <h3>Nisl consequat</h3>
-            <p>
-              Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-              aliquam sed facilisis ante interdum congue. Integer mollis, nisl
-              amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna
-              finibus nisi nec lacinia ipsum maximus.
-            </p>
-          </header>
-          <div className="content">
-            <Gallery
-              images={images02.map(
-                ({
-                  id,
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                })
-              )}
-            />
-          </div>
-        </section>
-
-        <section>
-          <header>
-            <h3>Lorem gravida</h3>
-            <p>
-              Proin aliquam facilisis ante interdum. Sed nulla amet lorem
-              feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem
-              ullamcorper dolore. ac varius enim lorem ullamcorper dolore. Proin
-              aliquam facilisis.
-            </p>
-          </header>
-          <div className="content">
-            <Gallery
-              images={images03.map(
-                ({
-                  id,
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                })
-              )}
-            />
-          </div>
-        </section>
+        <div className="content">
+          <Gallery
+            images={oculus.map(
+              ({ id, source, thumbnail, caption, description, landscape }) => ({
+                source,
+                thumbnail,
+                caption,
+                description,
+                landscape,
+              })
+            )}
+          />
+        </div>
+        <br />
+        <p>
+          <h2>
+            Wagger //{' '}
+            <a
+              href="https://github.com/mddilley/wagger"
+              className="icon brands fa-github"
+            >
+              <span className="label">GitHub</span>Code //{' '}
+            </a>
+            <a
+              href="https://wagger-rails.herokuapp.com/"
+              className="icon brands"
+            >
+              <span className="label">GitHub</span>
+              <img className="image heroku" src={heroku} /> Demo
+            </a>
+          </h2>
+          A Ruby on Rails and JavaScript application that allows users to
+          register, add dogs, and plan dog playdates
+        </p>
+        <div className="content">
+          <Gallery
+            images={wagger.map(
+              ({ id, source, thumbnail, caption, description, landscape }) => ({
+                source,
+                thumbnail,
+                caption,
+                description,
+                landscape,
+              })
+            )}
+          />
+        </div>
+        <br />
+        <p>
+          <h2>
+            MTG Deck Builder //{' '}
+            <a
+              href="https://github.com/mddilley/mtg-deck-builder"
+              className="icon brands fa-github"
+            >
+              <span className="label">GitHub</span>Code //{' '}
+            </a>
+            <a
+              href="https://mtg-deck-builder-sinatra.herokuapp.com/"
+              className="icon brands"
+            >
+              <span className="label">GitHub</span>
+              <img className="image heroku" src={heroku} /> Demo
+            </a>
+          </h2>
+          A RESTful Sinatra app that builds Magic: The Gathering decks utilizing
+          Scryfall API for card data
+        </p>
+        <div className="content">
+          <Gallery
+            images={mtg.map(
+              ({ id, source, thumbnail, caption, description, landscape }) => ({
+                source,
+                thumbnail,
+                caption,
+                description,
+                landscape,
+              })
+            )}
+          />
+        </div>
+        <br />
+        <p>
+          <h2>
+            Fantasy Football //{' '}
+            <a
+              href="https://github.com/mddilley/fantasy-football"
+              className="icon brands fa-github"
+            >
+              <span className="label">GitHub</span>Code //{' '}
+            </a>
+            <a
+              href="https://rubygems.org/gems/fantasy-football"
+              className="icon fa-gem"
+            >
+              <span className="label">Ruby gem</span>Gem{' '}
+            </a>
+          </h2>{' '}
+          A simple Ruby CLI gem that scrapes fantasy football player ranking
+          data from Fantasypros.com
+        </p>
+        <div className="content">
+          <Gallery
+            images={ff.map(
+              ({ id, source, thumbnail, caption, description, landscape }) => ({
+                source,
+                thumbnail,
+                caption,
+                description,
+                landscape,
+              })
+            )}
+          />
+        </div>
+        <br />
       </div>
     </section>
 
@@ -403,7 +498,7 @@ const IndexPage = () => (
     </section>
 
     <div className="copyright">
-      &copy; Untitled. All rights reserved. Design:{' '}
+      &copy; Mike Dilley. All rights reserved. Built with Gatsby JS and{' '}
       <a href="https://html5up.net">HTML5 UP</a>.
     </div>
   </Layout>
