@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Carousel, { Modal, ModalGateway } from 'react-images'
+import Img from 'gatsby-image'
 
 class Gallery extends Component {
   constructor() {
@@ -32,7 +33,7 @@ class Gallery extends Component {
             this.toggleLightbox(i)
           }}
         >
-          <img src={obj.thumbnail} />
+          <Img fluid={obj.thumbnail} />
         </a>
       )
     })
