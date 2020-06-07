@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import moment from 'moment'
 import heroku from '../assets/img/heroku-logo-solid-black.svg'
 import oculusPic from '../assets/img/oculus.jpg'
@@ -120,9 +121,9 @@ const IndexPage = ({ data }) => {
             Transporation Department's Data & Technology Services team. I help
             build projects to make work easier and smarter, and my role is
             largely focused on helping Austin work towards{' '}
-            <a href="http://austintexas.gov/department/vision-zero">
+            <OutboundLink href="http://austintexas.gov/department/vision-zero">
               Vision Zero
-            </a>
+            </OutboundLink>
             . I'm lucky to work with a team that boldy explores new tech while
             also keeping the tried and true close at hand.
           </p>
@@ -137,19 +138,19 @@ const IndexPage = ({ data }) => {
           <p>
             <h2>
               Oculus LIMS >{' '}
-              <a
+              <OutboundLink
                 href="https://github.com/mddilley/oculus-lims"
                 className="icon brands fa-github"
               >
                 <span className="label">GitHub</span>Code //{' '}
-              </a>
-              <a
+              </OutboundLink>
+              <OutboundLink
                 href="https://github.com/mddilley/oculus-lims-api"
                 className="icon brands fa-github"
               >
                 <span className="label">GitHub</span>API //{' '}
-              </a>
-              <a
+              </OutboundLink>
+              <OutboundLink
                 href="https://oculus-lims.herokuapp.com/"
                 className="icon brands"
               >
@@ -160,7 +161,7 @@ const IndexPage = ({ data }) => {
                   src={heroku}
                 />{' '}
                 Demo
-              </a>
+              </OutboundLink>
             </h2>
             A laboratory information management tool built with React and Redux
             and served by a Ruby on Rails API{' '}
@@ -189,13 +190,13 @@ const IndexPage = ({ data }) => {
           <p>
             <h2>
               Wagger >{' '}
-              <a
+              <OutboundLink
                 href="https://github.com/mddilley/wagger"
                 className="icon brands fa-github"
               >
                 <span className="label">GitHub</span>Code //{' '}
-              </a>
-              <a
+              </OutboundLink>
+              <OutboundLink
                 href="https://wagger-rails.herokuapp.com/"
                 className="icon brands"
               >
@@ -206,7 +207,7 @@ const IndexPage = ({ data }) => {
                   src={heroku}
                 />{' '}
                 Demo
-              </a>
+              </OutboundLink>
             </h2>
             A Ruby on Rails and JavaScript application that allows users to
             register, add dogs, and plan dog playdates
@@ -235,13 +236,13 @@ const IndexPage = ({ data }) => {
           <p>
             <h2>
               MTG Deck Builder >{' '}
-              <a
+              <OutboundLink
                 href="https://github.com/mddilley/mtg-deck-builder"
                 className="icon brands fa-github"
               >
                 <span className="label">GitHub</span>Code //{' '}
-              </a>
-              <a
+              </OutboundLink>
+              <OutboundLink
                 href="https://mtg-deck-builder-sinatra.herokuapp.com/"
                 className="icon brands"
               >
@@ -252,7 +253,7 @@ const IndexPage = ({ data }) => {
                   src={heroku}
                 />{' '}
                 Demo
-              </a>
+              </OutboundLink>
             </h2>
             A RESTful Sinatra app that builds Magic: The Gathering decks
             utilizing Scryfall API for card data
@@ -281,18 +282,18 @@ const IndexPage = ({ data }) => {
           <p>
             <h2>
               Fantasy Football >{' '}
-              <a
+              <OutboundLink
                 href="https://github.com/mddilley/fantasy-football"
                 className="icon brands fa-github"
               >
                 <span className="label">GitHub</span>Code //{' '}
-              </a>
-              <a
+              </OutboundLink>
+              <OutboundLink
                 href="https://rubygems.org/gems/fantasy-football"
                 className="icon fa-gem"
               >
                 <span className="label">Ruby gem</span>Gem{' '}
-              </a>
+              </OutboundLink>
             </h2>{' '}
             A simple Ruby CLI gem that scrapes fantasy football player ranking
             data from Fantasypros.com
@@ -379,44 +380,44 @@ const IndexPage = ({ data }) => {
               <h3>Elsewhere</h3>
               <ul className="icons">
                 <li>
-                  <a
+                  <OutboundLink
                     href="https://github.com/mddilley"
                     className="icon brands fa-github"
                   >
                     <span className="label">GitHub</span>
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     href="https://www.linkedin.com/in/mike-dilley/"
                     className="icon brands fa-linkedin-in"
                   >
                     <span className="label">LinkedIn</span>
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     href="https://www.instagram.com/mdilley/"
                     className="icon brands fa-instagram"
                   >
                     <span className="label">Instagram</span>
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     href="https://www.facebook.com/mddilley/"
                     className="icon brands fa-facebook-f"
                   >
                     <span className="label">Facebook</span>
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     href="https://twitter.com/mddilley"
                     className="icon brands fa-twitter"
                   >
                     <span className="label">Twitter</span>
-                  </a>
+                  </OutboundLink>
                 </li>
               </ul>
             </li>

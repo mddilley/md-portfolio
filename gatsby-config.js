@@ -28,6 +28,12 @@ module.exports = {
         path: `${__dirname}/src/assets/img`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-168786770-1',
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],
