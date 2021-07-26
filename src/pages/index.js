@@ -130,14 +130,25 @@ const IndexPage = ({ data }) => {
         </header>
         <div className="content">
           <p>
-            I currently serve the <strong>City of Austin</strong> as part of the
-            Transporation Department's Data & Technology Services team. I help
-            build projects to make work easier and smarter, and my role is
-            largely focused on helping Austin work towards{' '}
+            I currently work as a full stack developer for the{' '}
+            <strong>
+              <OutboundLink href="https://www.dallasnews.com/">
+                Dallas Morning News
+              </OutboundLink>
+            </strong>{' '}
+            as part of The Product Team. Our challenges largely revolve around
+            keeping the greater Dallas area informed and engaged using digital
+            solutions.
+          </p>
+          <p>
+            I previously served the <strong>City of Austin</strong> as part of
+            the Transporation Department's Data & Technology Services team. I
+            helped build projects to make work easier and smarter, and my role
+            was largely focused on helping Austin work towards{' '}
             <OutboundLink href="http://austintexas.gov/department/vision-zero">
               Vision Zero
             </OutboundLink>
-            . I'm lucky to work with a team that boldy explores new tech while
+            . I was lucky to work with a team that boldy explores new tech while
             also keeping the tried and true close at hand.
           </p>
         </div>
