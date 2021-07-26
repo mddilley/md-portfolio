@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import moment from 'moment'
 import heroku from '../assets/img/heroku-logo-solid-black.svg'
+import waggerRNPic from '../assets/img/wagger-react-native.png'
 import oculusPic from '../assets/img/oculus.jpg'
 import waggerPic from '../assets/img/wagger.jpg'
 import mtgPic from '../assets/img/mtg.jpg'
@@ -12,6 +13,18 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 
 const IndexPage = ({ data }) => {
+  const waggerRN = [
+    {
+      id: 'wagger-react-native',
+      source: waggerRNPic,
+      thumbnail: data.waggerRN.childImageSharp.fluid,
+      caption: 'Wagger React Native',
+      description:
+        'A work in progress React Native rebuild of my Wagger project that was built with Ruby on Rails',
+      landscape: false,
+    },
+  ]
+
   const oculus = [
     {
       id: 'oculus',
@@ -135,6 +148,40 @@ const IndexPage = ({ data }) => {
           <h2>Projects</h2>
         </header>
         <div className="content">
+          <p>
+            <h2>
+              Wagger React Native >{' '}
+              <OutboundLink
+                href="https://github.com/mddilley/wagger-react-native"
+                className="icon brands fa-github"
+              >
+                <span className="label">GitHub</span>Code{' '}
+              </OutboundLink>
+            </h2>
+            A work in progress React Native rebuild of my previous Wagger
+            project that was built with Ruby on Rails{' '}
+          </p>
+          <div className="content">
+            <Gallery
+              images={waggerRN.map(
+                ({
+                  id,
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                  landscape,
+                }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                  landscape,
+                })
+              )}
+            />
+          </div>
+          <br />
           <p>
             <h2>
               Oculus LIMS >{' '}
@@ -341,10 +388,16 @@ const IndexPage = ({ data }) => {
               <i className="devicon-css3-plain-wordmark"></i>
             </li>
             <li>
+              <i class="devicon-amazonwebservices-plain-wordmark"></i>
+            </li>
+            <li>
               <i className="devicon-bootstrap-plain-wordmark"></i>
             </li>
             <li>
-              <i className="devicon-github-plain-wordmark"></i>
+              <i class="devicon-materialui-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-github-original"></i>
             </li>
             <li>
               <i className="devicon-git-plain-wordmark"></i>
@@ -357,6 +410,9 @@ const IndexPage = ({ data }) => {
             </li>
             <li>
               <i className="devicon-ruby-plain-wordmark"></i>
+            </li>
+            <li>
+              <i class="devicon-graphql-plain-wordmark"></i>
             </li>
           </ul>
         </div>
@@ -440,6 +496,13 @@ export const query = graphql`
     headshot: file(relativePath: { eq: "headshot2squared.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 700, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    waggerRN: file(relativePath: { eq: "wagger-react-native.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

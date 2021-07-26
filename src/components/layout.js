@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
           <link
             rel="stylesheet"
-            href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
           />
         </Helmet>
         <div id="wrapper">{children}</div>
