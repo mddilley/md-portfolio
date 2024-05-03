@@ -160,23 +160,28 @@ const IndexPage = ({ data }) => {
         </header>
         <div className="content">
           <p>
-            <strong>Let me tell you a bit about myself!</strong> My primary
-            language is Javascript, and I'm loving React Hooks on the front end
-            for keeping code simple, readable, and consistent. On the side, I'm
-            exploring Python, Amazon Web Services, and containerization at the
+            <strong>Let me tell you a bit about myself.</strong> My primary
+            language is Javascript, and I'm loving Next.js and React on the
+            front end for keeping code simple, readable, and consistent. I'm a
+            huge fan of user-focused product development, and I love seeing the
+            unique strengths of each team member come together to push a product
+            towards success. On the side, I'm exploring Next.js app router,
+            Amazon Web Services, product management, and containerization at the
             moment.
           </p>
           <p>
             <strong>When it comes to getting things done</strong>, I self-teach,
             collaborate, and support a human-centered culture of encouragement
             and sharing. I love seeing projects grow over time, and I strive for
-            scalable, self-documented, and extensible code.
+            scalable, self-documented, and extensible code. I also believe we
+            learn so much by reading code written by others.
           </p>
 
           <p>
             <strong>Outside of work</strong>, I love learning about music,
             leveling up my cooking skills, exploring the beautiful city of
-            Austin, TX, and caring for my dog named Ben.
+            Austin, TX, and caring for my dog named Ben (01/12/2009 - 11/01/2023
+            ❤️💐).
           </p>
         </div>
       </section>
@@ -484,6 +489,9 @@ const IndexPage = ({ data }) => {
           <ul className="content-icons">
             <li>
               <i className="devicon-react-original-wordmark"></i>
+            </li>
+            <li>
+              <i class="devicon-nextjs-original-wordmark colored"></i>
             </li>
             <li>
               <i className="devicon-javascript-plain"></i>
