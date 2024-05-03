@@ -181,7 +181,7 @@ const IndexPage = ({ data }) => {
             <strong>Outside of work</strong>, I love learning about music,
             leveling up my cooking skills, exploring the beautiful city of
             Austin, TX, and caring for my dog named Ben (01/12/2009 - 11/01/2023
-            ❤️💐).
+            💐).
           </p>
         </div>
       </section>
@@ -236,7 +236,7 @@ const IndexPage = ({ data }) => {
             Empowers users to post, vote, flag, and view deals and enables
             admins to manage users. MVP planned and managed using{' '}
             <OutboundLink href="https://linear.app/">Linear.app</OutboundLink>.
-            Built with NextJS, Drizzle ORM, Neon (Postgres), and Clerk for
+            Built with Next.js, Drizzle ORM, Neon (Postgres), and Clerk for
             authentication.{' '}
           </p>
           <div className="content">
