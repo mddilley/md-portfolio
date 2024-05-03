@@ -4,6 +4,12 @@ import Img from 'gatsby-image'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import moment from 'moment'
 import heroku from '../assets/img/heroku-logo-solid-black.svg'
+import dealsForYouMainPic from '../assets/img/deals-for-you-main.png'
+import dealsForYouSubmit from '../assets/img/deals-for-you-submit.png'
+import dealsForYouMobile from '../assets/img/deals-for-you-mobile.png'
+import dealsForYouAdmin from '../assets/img/deals-for-you-admin.png'
+import dealsForYouProfile from '../assets/img/deals-for-you-profile.png'
+import dealsForYouDark from '../assets/img/deals-for-you-dark.png'
 import waggerRNPic from '../assets/img/wagger-react-native.png'
 import oculusPic from '../assets/img/oculus.jpg'
 import waggerPic from '../assets/img/wagger.jpg'
@@ -13,6 +19,57 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 
 const IndexPage = ({ data }) => {
+  const dealsForYou = [
+    {
+      id: 'deals-for-you-main',
+      source: dealsForYouMainPic,
+      thumbnail: data.dealsForYouMain.childImageSharp.fluid,
+      caption: 'Deals for You',
+      description: 'Main view of the Deals for You App',
+      landscape: false,
+    },
+    {
+      id: 'deals-for-you-submit',
+      source: dealsForYouSubmit,
+      thumbnail: data.dealsForYouSubmit.childImageSharp.fluid,
+      caption: 'Deals for You',
+      description: 'Submit a deal view of the Deals for You App',
+      landscape: false,
+    },
+    {
+      id: 'deals-for-you-mobile',
+      source: dealsForYouMobile,
+      thumbnail: data.dealsForYouMobile.childImageSharp.fluid,
+      caption: 'Deals for You',
+      description: 'Mobile view of the Deals for You App',
+      landscape: false,
+    },
+    {
+      id: 'deals-for-you-admin',
+      source: dealsForYouAdmin,
+      thumbnail: data.dealsForYouAdmin.childImageSharp.fluid,
+      caption: 'Deals for You',
+      description: 'Admin view of the Deals for You App',
+      landscape: false,
+    },
+    {
+      id: 'deals-for-you-profile',
+      source: dealsForYouProfile,
+      thumbnail: data.dealsForYouProfile.childImageSharp.fluid,
+      caption: 'Deals for You',
+      description: 'Profile view of the Deals for You App',
+      landscape: false,
+    },
+    {
+      id: 'deals-for-you-dark',
+      source: dealsForYouDark,
+      thumbnail: data.dealsForYouDark.childImageSharp.fluid,
+      caption: 'Deals for You',
+      description: 'Dark mode of the Deals for You App',
+      landscape: false,
+    },
+  ]
+
   const waggerRN = [
     {
       id: 'wagger-react-native',
@@ -79,9 +136,9 @@ const IndexPage = ({ data }) => {
         <header>
           <h1>Mike Dilley</h1>
           <p>
-            Howdy! I'm a web developer who's passionate about learning new tech
-            and pursuing incremental improvement - especially when it makes
-            other lives better.
+            I'm a web developer who's passionate about learning new tech and
+            pursuing incremental improvement - especially when it makes other
+            lives better.
           </p>
           <ul className="actions">
             <li>
@@ -130,13 +187,23 @@ const IndexPage = ({ data }) => {
         </header>
         <div className="content">
           <p>
-            I currently work as a full stack developer for the{' '}
+            I currently work as a software developer for the City of Austin
+            Transporation and Public Works Department{' '}
+            <strong>
+              <OutboundLink href="https://austinmobility.io/about">
+                Data & Technology Services Division
+              </OutboundLink>
+            </strong>
+            .
+          </p>
+          <p>
+            I formerly worked as a full stack developer for{' '}
             <strong>
               <OutboundLink href="https://www.dallasnews.com/">
-                Dallas Morning News
+                The Dallas Morning News
               </OutboundLink>
             </strong>{' '}
-            as part of The Product Team. Our challenges largely revolve around
+            as part of The Product Team. Our challenges largely revolved around
             keeping the greater Dallas area informed and engaged using digital
             solutions.
           </p>
@@ -159,6 +226,35 @@ const IndexPage = ({ data }) => {
           <h2>Projects</h2>
         </header>
         <div className="content">
+          <p>
+            <h2>Deals for You</h2>
+            Empowers users to post, vote, flag, and view deals and enables
+            admins to manage users. MVP planned and managed using{' '}
+            <OutboundLink href="https://linear.app/">Linear.app</OutboundLink>.
+            Built with NextJS, Drizzle ORM, Neon (Postgres), and Clerk for
+            authentication.{' '}
+          </p>
+          <div className="content">
+            <Gallery
+              images={dealsForYou.map(
+                ({
+                  id,
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                  landscape,
+                }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                  landscape,
+                })
+              )}
+            />
+          </div>
+          <br />
           <p>
             <h2>
               Wagger React Native >{' '}
@@ -507,6 +603,50 @@ export const query = graphql`
     headshot: file(relativePath: { eq: "headshot2squared.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 700, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dealsForYouMain: file(relativePath: { eq: "deals-for-you-main.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dealsForYouSubmit: file(relativePath: { eq: "deals-for-you-submit.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dealsForYouMobile: file(relativePath: { eq: "deals-for-you-mobile.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dealsForYouAdmin: file(relativePath: { eq: "deals-for-you-admin.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dealsForYouDark: file(relativePath: { eq: "deals-for-you-dark.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dealsForYouProfile: file(
+      relativePath: { eq: "deals-for-you-profile.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
